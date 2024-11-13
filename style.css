@@ -1,15 +1,15 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
 
 /* Import the CSS reset from the portfolio website */
 @import url('https://gladiii92.github.io/Portfolio-Website/style.css');
 
-/* Additional styles specific to the Password Generator */
+/* Center the container */
 body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  background-color: #1a1a1a;
 }
 
 .container {
