@@ -1,9 +1,28 @@
-<section id="projects">
-    <h2>Meine Projekte</h2>
-    <div class="project">
-        <h3>Passwort-Generator</h3>
-        <p>Dieser Passwort-Generator hilft dabei, sichere und zufällige Passwörter zu erstellen.</p>
-        <a href="https://gladiii92.github.io/password-generator" target="_blank">Projekt ansehen</a>
-    </div>
-    <!-- Weitere Projekte können hier hinzugefügt werden -->
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <p>Click the button to generate a secure password.</p>
+    <input type="text" id="password-input" readonly>
+    <button onclick="generatePassword()">Generate Password</button>
+  </div>
+
+  <script>
+    function generatePassword() {
+      const chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()";
+      let password = "";
+      for (let i = 0; i < 16; i++) {
+        password += chars[Math.floor(Math.random() * chars.length)];
+      }
+      document.getElementById("password-input").value = password;
+    }
+  </script>
+</body>
+</html>
