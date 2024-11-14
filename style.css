@@ -3,35 +3,16 @@
 /* Import the CSS reset from the portfolio website */
 @import url('https://gladiii92.github.io/Portfolio-Website/style.css');
 
-/* Center the container */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #1a1a1a;
-}
-
-.container {
+/* Password Generator Styles */
+.project .password-generator {
   background-color: #333;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 400px;
 }
 
-h1 {
-  color: #BDB76B;
-  margin-bottom: 1.5rem;
-}
-
-p {
-  color: #f2f2f2;
-  margin-bottom: 1rem;
-}
-
-input, button {
+.project .password-generator input,
+.project .password-generator button {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1rem;
@@ -39,19 +20,13 @@ input, button {
   border-radius: 4px;
 }
 
-button {
+.project .password-generator button {
   background-color: #BDB76B;
   color: #1a1a1a;
   border: none;
   cursor: pointer;
 }
 
-button:hover {
+.project .password-generator button:hover {
   background-color: #DAA520;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 80%;
-  }
 }
