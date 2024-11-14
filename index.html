@@ -5,14 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password Generator</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>Password Generator</h1>
-    <p>Click the button to generate a secure password.</p>
-    <input type="text" id="password-input" readonly>
-    <button onclick="generatePassword()">Generate Password</button>
-  </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="https://gladiii92.github.io/Portfolio-Website/">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project password-generator">
+      <h1>Password Generator</h1>
+      <p>Click the button to generate a secure password.</p>
+      <input type="text" id="password-input" readonly>
+      <button onclick="generatePassword()">Generate Password</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 David Heinke. All rights reserved.</p>
+    <p>Contact: David_Heinke@gmx.de</p>
+  </footer>
 
   <script>
     function generatePassword() {
